@@ -1,0 +1,440 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Jun  9 00:14:22 2024
+# Process ID: 136414
+# Current directory: /home/niki/Downloads/vorgaben/project_TWO/project_TWO.runs/synth_1
+# Command line: vivado -log ArmUncoreTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ArmUncoreTop.tcl
+# Log file: /home/niki/Downloads/vorgaben/project_TWO/project_TWO.runs/synth_1/ArmUncoreTop.vds
+# Journal file: /home/niki/Downloads/vorgaben/project_TWO/project_TWO.runs/synth_1/vivado.jou
+# Running On: pc-niki, OS: Linux, CPU Frequency: 4001.070 MHz, CPU Physical cores: 16, Host memory: 32720 MB
+#-----------------------------------------------------------
+source ArmUncoreTop.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/niki/Downloads/vorgaben/project_TWO/project_TWO.srcs/utils_1/imports/synth_1/ArmUncoreTop.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/niki/Downloads/vorgaben/project_TWO/project_TWO.srcs/utils_1/imports/synth_1/ArmUncoreTop.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ArmUncoreTop -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 136438
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2024.613 ; gain = 405.715 ; free physical = 449 ; free virtual = 16257
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ArmUncoreTop' [/home/niki/Downloads/vorgaben/ArmUncoreTop.vhd:44]
+INFO: [Synth 8-3491] module 'ArmSwitchDebounce' declared at '/home/niki/Downloads/vorgaben/ArmSwitchDebounce.vhd:21' bound to instance 'Debouncing_EXT_LDP' of component 'ArmSwitchDebounce' [/home/niki/Downloads/vorgaben/ArmUncoreTop.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'ArmSwitchDebounce' [/home/niki/Downloads/vorgaben/ArmSwitchDebounce.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'ArmWaitStateGenAsync' [/home/niki/Downloads/vorgaben/ArmWaitStateGenAsync.vhd:22]
+	Parameter COUNT_VALUE_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ArmWaitStateGenAsync' (0#1) [/home/niki/Downloads/vorgaben/ArmWaitStateGenAsync.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'ArmSwitchDebounce' (0#1) [/home/niki/Downloads/vorgaben/ArmSwitchDebounce.vhd:30]
+INFO: [Synth 8-3491] module 'ArmChipSelectGenerator' declared at '/home/niki/Downloads/vorgaben/ArmChipSelectGenerator.vhd:30' bound to instance 'Inst_ArmChipSelectGenerator' of component 'ArmChipSelectGenerator' [/home/niki/Downloads/vorgaben/ArmUncoreTop.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'ArmChipSelectGenerator' [/home/niki/Downloads/vorgaben/ArmChipSelectGenerator.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'ArmChipSelectGenerator' (0#1) [/home/niki/Downloads/vorgaben/ArmChipSelectGenerator.vhd:46]
+	Parameter SELECT_LINES bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'ArmMemInterface' declared at '/home/niki/uni/HWPTI/ArmMemInterface.vhd:15' bound to instance 'Inst_ArmMemInterface' of component 'ArmMemInterface' [/home/niki/Downloads/vorgaben/ArmUncoreTop.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'ArmMemInterface' [/home/niki/uni/HWPTI/ArmMemInterface.vhd:39]
+	Parameter SELECT_LINES bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ArmRAMB_4kx32' [/home/niki/uni/HWPTI/ArmRAMB_4kx32.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'ArmRAMB_4kx32' (0#1) [/home/niki/uni/HWPTI/ArmRAMB_4kx32.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'ArmMemInterface' (0#1) [/home/niki/uni/HWPTI/ArmMemInterface.vhd:39]
+INFO: [Synth 8-3491] module 'ArmRS232Interface' declared at '/home/niki/Downloads/vorgaben/ArmRS232Interface.vhd:48' bound to instance 'Inst_ArmRS232Interface' of component 'ArmRS232Interface' [/home/niki/Downloads/vorgaben/ArmUncoreTop.vhd:222]
+INFO: [Synth 8-638] synthesizing module 'ArmRS232Interface' [/home/niki/Downloads/vorgaben/ArmRS232Interface.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'ArmWaitStateGenAsync__parameterized0' [/home/niki/Downloads/vorgaben/ArmWaitStateGenAsync.vhd:22]
+	Parameter COUNT_VALUE_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ArmWaitStateGenAsync__parameterized0' (0#1) [/home/niki/Downloads/vorgaben/ArmWaitStateGenAsync.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'PISOShiftReg' [/home/niki/Downloads/vorgaben/PISOShiftReg.vhd:22]
+	Parameter WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PISOShiftReg' (0#1) [/home/niki/Downloads/vorgaben/PISOShiftReg.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'ArmRS232Interface' (0#1) [/home/niki/Downloads/vorgaben/ArmRS232Interface.vhd:67]
+INFO: [Synth 8-3491] module 'ArmSystemController' declared at '/home/niki/Downloads/vorgaben/ArmSystemController.vhd:47' bound to instance 'Inst_ArmSystemController' of component 'ArmSystemController' [/home/niki/Downloads/vorgaben/ArmUncoreTop.vhd:237]
+INFO: [Synth 8-638] synthesizing module 'ArmSystemController' [/home/niki/Downloads/vorgaben/ArmSystemController.vhd:69]
+INFO: [Synth 8-3491] module 'ArmClkGen' declared at '/home/niki/Downloads/vorgaben/project_TWO/project_TWO.gen/sources_1/ip/ArmClkGen/ArmClkGen.v:66' bound to instance 'Inst_ArmClkGen' of component 'ArmClkGen' [/home/niki/Downloads/vorgaben/ArmSystemController.vhd:119]
+INFO: [Synth 8-6157] synthesizing module 'ArmClkGen' [/home/niki/Downloads/vorgaben/project_TWO/project_TWO.gen/sources_1/ip/ArmClkGen/ArmClkGen.v:66]
+INFO: [Synth 8-6157] synthesizing module 'ArmClkGen_clk_wiz' [/home/niki/Downloads/vorgaben/project_TWO/project_TWO.gen/sources_1/ip/ArmClkGen/ArmClkGen_clk_wiz.v:66]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:73631]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:73631]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:82174]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 100.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:82174]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'ArmClkGen_clk_wiz' (0#1) [/home/niki/Downloads/vorgaben/project_TWO/project_TWO.gen/sources_1/ip/ArmClkGen/ArmClkGen_clk_wiz.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'ArmClkGen' (0#1) [/home/niki/Downloads/vorgaben/project_TWO/project_TWO.gen/sources_1/ip/ArmClkGen/ArmClkGen.v:66]
+INFO: [Synth 8-256] done synthesizing module 'ArmSystemController' (0#1) [/home/niki/Downloads/vorgaben/ArmSystemController.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'ArmUncoreTop' (0#1) [/home/niki/Downloads/vorgaben/ArmUncoreTop.vhd:44]
+WARNING: [Synth 8-7129] Port CTRL_DABORT in module ArmSystemController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[31] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[30] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[29] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[28] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[27] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[26] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[25] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[24] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[23] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[22] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[21] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[20] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[19] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[18] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[17] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[16] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[15] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[14] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[13] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[12] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[11] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[10] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[9] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RS232_DDIN[8] in module ArmRS232Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[31] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[30] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[29] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[28] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[27] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[26] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[25] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[24] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[23] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[22] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[21] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[20] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[19] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[18] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[17] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[16] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[15] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DA[14] in module ArmMemInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CSG_DA[11] in module ArmChipSelectGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CSG_DA[10] in module ArmChipSelectGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CSG_DA[9] in module ArmChipSelectGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CSG_DA[8] in module ArmChipSelectGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CSG_DA[7] in module ArmChipSelectGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CSG_DA[6] in module ArmChipSelectGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CSG_DA[5] in module ArmChipSelectGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CSG_DA[4] in module ArmChipSelectGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CSG_DA[3] in module ArmChipSelectGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CSG_DA[2] in module ArmChipSelectGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CSG_DA[1] in module ArmChipSelectGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CSG_DA[0] in module ArmChipSelectGenerator is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2107.582 ; gain = 488.684 ; free physical = 339 ; free virtual = 16148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2122.426 ; gain = 503.527 ; free physical = 336 ; free virtual = 16145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2122.426 ; gain = 503.527 ; free physical = 336 ; free virtual = 16145
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2128.363 ; gain = 0.000 ; free physical = 332 ; free virtual = 16141
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/niki/Downloads/vorgaben/project_TWO/project_TWO.gen/sources_1/ip/ArmClkGen/ArmClkGen_board.xdc] for cell 'Inst_ArmSystemController/Inst_ArmClkGen/inst'
+Finished Parsing XDC File [/home/niki/Downloads/vorgaben/project_TWO/project_TWO.gen/sources_1/ip/ArmClkGen/ArmClkGen_board.xdc] for cell 'Inst_ArmSystemController/Inst_ArmClkGen/inst'
+Parsing XDC File [/home/niki/Downloads/vorgaben/project_TWO/project_TWO.gen/sources_1/ip/ArmClkGen/ArmClkGen.xdc] for cell 'Inst_ArmSystemController/Inst_ArmClkGen/inst'
+Finished Parsing XDC File [/home/niki/Downloads/vorgaben/project_TWO/project_TWO.gen/sources_1/ip/ArmClkGen/ArmClkGen.xdc] for cell 'Inst_ArmSystemController/Inst_ArmClkGen/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/niki/Downloads/vorgaben/project_TWO/project_TWO.gen/sources_1/ip/ArmClkGen/ArmClkGen.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ArmUncoreTop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ArmUncoreTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [/home/niki/Downloads/vorgaben/HWPTI_Master.xdc]
+Finished Parsing XDC File [/home/niki/Downloads/vorgaben/HWPTI_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/niki/Downloads/vorgaben/HWPTI_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ArmUncoreTop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ArmUncoreTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/niki/Downloads/vorgaben/project_TWO/project_TWO.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/niki/Downloads/vorgaben/project_TWO/project_TWO.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/niki/Downloads/vorgaben/project_TWO/project_TWO.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ArmUncoreTop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ArmUncoreTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2284.176 ; gain = 0.000 ; free physical = 315 ; free virtual = 16134
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2284.211 ; gain = 0.000 ; free physical = 315 ; free virtual = 16134
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2284.211 ; gain = 665.312 ; free physical = 315 ; free virtual = 16134
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2284.211 ; gain = 665.312 ; free physical = 315 ; free virtual = 16134
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for Inst_ArmSystemController/Inst_ArmClkGen/inst. (constraint file  /home/niki/Downloads/vorgaben/project_TWO/project_TWO.runs/synth_1/dont_touch.xdc, line 10).
+Applied set_property KEEP_HIERARCHY = SOFT for Inst_ArmSystemController/Inst_ArmClkGen. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2284.211 ; gain = 665.312 ; free physical = 315 ; free virtual = 16134
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'RS232_RECEIVER.RCV_STATE_reg' in module 'ArmRS232Interface'
+INFO: [Synth 8-802] inferred FSM for state register 'CTRL_STATE_reg' in module 'ArmSystemController'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                rcv_idle |                               00 |                               00
+            rcv_read_bit |                               01 |                               01
+               rcv_stopp |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'RS232_RECEIVER.RCV_STATE_reg' using encoding 'sequential' in module 'ArmRS232Interface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               ctrl_idle |                             0000 |                             0000
+  ctrl_read_stdin_status |                             0001 |                             0001
+    ctrl_read_stdin_data |                             0010 |                             0010
+          ctrl_write_mem |                             0011 |                             0110
+           ctrl_read_mem |                             0100 |                             0101
+ ctrl_read_stdout_status |                             0101 |                             0011
+  ctrl_write_stdout_data |                             0110 |                             0100
+         ctrl_wait_state |                             0111 |                             1000
+           ctrl_finished |                             1000 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CTRL_STATE_reg' using encoding 'sequential' in module 'ArmSystemController'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2284.211 ; gain = 665.312 ; free physical = 315 ; free virtual = 16135
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 20    
++---Registers : 
+	               32 Bit    Registers := 6     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                1 Bit    Registers := 19    
++---RAMs : 
+	             128K Bit	(4096 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 7     
+	   9 Input   32 Bit        Muxes := 2     
+	   9 Input   16 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 1     
+	   3 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   3 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	   9 Input    8 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 5     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 5     
+	   9 Input    2 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 19    
+	   4 Input    1 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2284.211 ; gain = 665.312 ; free physical = 302 ; free virtual = 16127
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name    | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ArmRAMB_4kx32: | RAM_reg    | 4 K x 32(READ_FIRST)   | W | R | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2284.211 ; gain = 665.312 ; free physical = 285 ; free virtual = 16117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2284.211 ; gain = 665.312 ; free physical = 287 ; free virtual = 16119
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name    | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ArmRAMB_4kx32: | RAM_reg    | 4 K x 32(READ_FIRST)   | W | R | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance Inst_ArmMemInterface/ram_module/RAM_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Inst_ArmMemInterface/ram_module/RAM_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Inst_ArmMemInterface/ram_module/RAM_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Inst_ArmMemInterface/ram_module/RAM_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2284.211 ; gain = 665.312 ; free physical = 287 ; free virtual = 16120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2284.211 ; gain = 665.312 ; free physical = 401 ; free virtual = 16088
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2284.211 ; gain = 665.312 ; free physical = 401 ; free virtual = 16088
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2284.211 ; gain = 665.312 ; free physical = 401 ; free virtual = 16088
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2284.211 ; gain = 665.312 ; free physical = 401 ; free virtual = 16088
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2284.211 ; gain = 665.312 ; free physical = 401 ; free virtual = 16088
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2284.211 ; gain = 665.312 ; free physical = 401 ; free virtual = 16088
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |CARRY4     |    39|
+|3     |LUT1       |     3|
+|4     |LUT2       |   163|
+|5     |LUT3       |    40|
+|6     |LUT4       |   117|
+|7     |LUT5       |    56|
+|8     |LUT6       |   109|
+|9     |MMCME2_ADV |     1|
+|10    |RAMB36E1   |     4|
+|11    |FDRE       |   302|
+|12    |FDSE       |    12|
+|13    |IBUF       |     4|
+|14    |OBUF       |     9|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2284.211 ; gain = 665.312 ; free physical = 401 ; free virtual = 16088
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2284.211 ; gain = 503.527 ; free physical = 401 ; free virtual = 16087
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2284.211 ; gain = 665.312 ; free physical = 401 ; free virtual = 16087
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2284.211 ; gain = 0.000 ; free physical = 620 ; free virtual = 16306
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2284.211 ; gain = 0.000 ; free physical = 657 ; free virtual = 16344
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 2f2b956a
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 56 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 2284.211 ; gain = 952.414 ; free physical = 644 ; free virtual = 16331
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1850.599; main = 1516.922; forked = 382.935
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3235.605; main = 2284.180; forked = 983.441
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2308.188 ; gain = 0.000 ; free physical = 644 ; free virtual = 16330
+INFO: [Common 17-1381] The checkpoint '/home/niki/Downloads/vorgaben/project_TWO/project_TWO.runs/synth_1/ArmUncoreTop.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ArmUncoreTop_utilization_synth.rpt -pb ArmUncoreTop_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  9 00:14:40 2024...
